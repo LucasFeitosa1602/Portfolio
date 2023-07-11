@@ -30,7 +30,7 @@ header {
 }
 
 header h1{
-    color: #221246;
+    color: #371e77;
     font-size: 2.5rem;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 30.10rem 0 0;
@@ -117,7 +117,7 @@ header .navegacao-primaria li a:hover::after{
 }
 
 .section-div div a:hover{
-    background-color: #221246;
+    background-color: #371e77;
     transform: translateY(-7px);
 }
 
@@ -271,6 +271,97 @@ main .sobre {
     }
 }
 
+/* SEÇÃO SERVICES */
+
+
+.services{
+    margin-top: -30px;
+    padding: 60px;
+    background-color: #151515;
+}
+
+.my_services{
+    padding: 60px;
+    color: white;
+}
+
+.my_services ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.my_services ul li {
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    padding: 10px;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    max-width: 300px;
+    align-content: center;
+    height: 300px;
+    background-color: #222;
+}
+
+.my_services ul li i {
+    font-size: 2.7rem;
+    color: #371e77;
+}
+
+.my_services h3 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.my_services ul li p {
+    color: #222222;
+}
+
+.my_services li::before {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.my_services li::after {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+.my_services li:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #371e77;
+    border-right: 2px solid #371e77;
+}
+
+.my_services li:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #371e77;
+    border-left: 2px solid #371e77;
+}
 
 /* FOOTER */
 
@@ -323,6 +414,7 @@ main .sobre {
         height: 90px;
     }
 }
+
 
 /* RESPONSIVO */
 
